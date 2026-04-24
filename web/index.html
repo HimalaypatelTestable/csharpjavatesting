@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixed Language Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <h1>Mixed Language Demo</h1>
+        <p class="tagline">A small sandbox exercising Java, C#, JS, HTML and CSS.</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Counter</h2>
+            <p>Clicks: <span id="counter">0</span></p>
+            <button id="increment-btn" type="button">Increment</button>
+            <button id="reset-btn" type="button">Reset</button>
+        </section>
+
+        <section class="card">
+            <h2>Languages covered</h2>
+            <ul id="lang-list"></ul>
+        </section>
+
+        <section class="card">
+            <h2>Echo box</h2>
+            <label for="echo-input">Say something:</label>
+            <input id="echo-input" type="text" placeholder="hello" />
+            <p>Echo: <span id="echo-output"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; Mixed Language Demo</small>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

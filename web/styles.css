@@ -1,0 +1,92 @@
+:root {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --accent: #5561ff;
+    --accent-dark: #3e47c7;
+    --text: #1b1d29;
+    --muted: #6b7080;
+    --radius: 10px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.site-header {
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.tagline {
+    margin: 0.5rem 0 0;
+    opacity: 0.85;
+}
+
+.container {
+    max-width: 860px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.95rem;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background: var(--accent-dark);
+}
+
+input[type="text"] {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #d6d9e2;
+    border-radius: var(--radius);
+    font-size: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    color: var(--muted);
+}
+
+ul#lang-list {
+    padding-left: 1.25rem;
+}
